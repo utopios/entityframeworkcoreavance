@@ -34,6 +34,9 @@ public partial class ReservationSystemContext : DbContext
 
             entity.Property(e => e.BookingDate).HasColumnType("datetime");
             entity.Property(e => e.ReservedBy).HasMaxLength(100);
+            entity.Property(e => e.RowVersion)
+                .IsRowVersion()
+                .IsConcurrencyToken();
 
             entity.HasOne(d => d.Room).WithMany(p => p.Bookings)
                 .HasForeignKey(d => d.RoomId)
