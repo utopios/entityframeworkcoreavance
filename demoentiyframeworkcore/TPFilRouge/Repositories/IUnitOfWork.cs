@@ -4,7 +4,7 @@ namespace TPFilRouge.Repositories;
 
 public interface IUnitOfWork
 {
-    BaseRepository<Booking> Bookings { get; }
+    BaseRepository<Booking> Bookings { get; set; }
 
-    Task saveChangeAsync();
+    Task SaveChangesAsync();
 }
