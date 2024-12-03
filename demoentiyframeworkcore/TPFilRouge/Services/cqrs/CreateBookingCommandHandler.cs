@@ -35,4 +35,10 @@ public class CreateBookingCommandHandler(CommandBookingDbContext dbContext) : IC
         _dbContext.Bookings.Add(booking);
         await _dbContext.SaveChangesAsync();
     }
+
+    public async Task HandleDeleteAsync(DateTime BookingDate)
+    {
+        await _dbContext.Bookings.Where(b => b.BookingDate.Date == BookingDate.Date).ExecuteDeleteAsync();
+        //await _dbContext.Database.ExecuteSqlRawAsync("DELETE * FROM Booking");
+    }
 }
