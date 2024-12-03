@@ -3,6 +3,7 @@
   <component name="EfCoreDialogsState">
     <option name="keyValueStorage">
       <map>
+        <entry key="Common:34e14ceb-4966-441f-b712-ea684505fc3f:dbContext" value="optimisation.DbContexts.AppDbContext" />
         <entry key="Common:buildConfiguration" value="Debug" />
         <entry key="Common:dbContextFolder" value="Context" />
         <entry key="Common:dbContextName" value="ReservationSystemContext" />
@@ -15,6 +16,7 @@
         <entry key="Common:tables" value="users" />
         <entry key="Common:useAttributes" value="false" />
         <entry key="Common:useDatabaseNames" value="false" />
+        <entry key="Common:useDefaultConnection" value="true" />
         <entry key="Common:usePluralizer" value="true" />
       </map>
     </option>
