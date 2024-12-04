@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "democqrs", "democqrs\democq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "optimisation", "optimisation\optimisation.csproj", "{34E14CEB-4966-441F-B712-EA684505FC3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "benchmark", "benchmark\benchmark.csproj", "{C6E35CB8-DBF3-475E-A316-7791384D6D5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{34E14CEB-4966-441F-B712-EA684505FC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34E14CEB-4966-441F-B712-EA684505FC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34E14CEB-4966-441F-B712-EA684505FC3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6E35CB8-DBF3-475E-A316-7791384D6D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6E35CB8-DBF3-475E-A316-7791384D6D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6E35CB8-DBF3-475E-A316-7791384D6D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6E35CB8-DBF3-475E-A316-7791384D6D5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

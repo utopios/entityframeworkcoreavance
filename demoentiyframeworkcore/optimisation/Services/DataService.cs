@@ -37,6 +37,19 @@ public class DataService(AppDbContext appDbContext)
         return patients.AsEnumerable().ToList();
     }
     
+    public List<Models.Models.Patient> GetPatientsEager()
+    {
+        
+        var patients = _appDbContext.Patients
+            .Include(p => p.Consultations)
+            .ThenInclude(c => c.Prescriptions)
+            .ThenInclude(p => p.Medicament)
+            .Where(p => p.DateNaissance >= DateTime.Now.AddYears(-30))
+            .ToList();
+
+        return patients;
+    }
+    
     
     
     public Models.Models.Patient GetPatient(int id)

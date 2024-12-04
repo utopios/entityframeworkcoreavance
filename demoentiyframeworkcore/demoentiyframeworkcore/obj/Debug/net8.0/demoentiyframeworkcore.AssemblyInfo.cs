@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("demoentiyframeworkcore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+585201a3f380f57660895ea4011ebc5090a0512c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61d4eac53ee0f47c9269ad37aae2776fbf7f2dfa")]
 [assembly: System.Reflection.AssemblyProductAttribute("demoentiyframeworkcore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("demoentiyframeworkcore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
