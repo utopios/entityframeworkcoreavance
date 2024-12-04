@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "correction_tp_final", "correction_tp_final\correction_tp_final.csproj", "{F98EE731-E54A-4BED-ADBD-9B5B1BF0C0D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFinalTP", "TestFinalTP\TestFinalTP.csproj", "{D932334F-5C3D-40CB-A2A9-1F0AEED9C9DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F98EE731-E54A-4BED-ADBD-9B5B1BF0C0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F98EE731-E54A-4BED-ADBD-9B5B1BF0C0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F98EE731-E54A-4BED-ADBD-9B5B1BF0C0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F98EE731-E54A-4BED-ADBD-9B5B1BF0C0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D932334F-5C3D-40CB-A2A9-1F0AEED9C9DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D932334F-5C3D-40CB-A2A9-1F0AEED9C9DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D932334F-5C3D-40CB-A2A9-1F0AEED9C9DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D932334F-5C3D-40CB-A2A9-1F0AEED9C9DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
