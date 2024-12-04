@@ -20,9 +20,19 @@ public class AppDbContext : DbContext
     {
         throw new NotImplementedException();
     }
+    
+    [DbFunction("GetPatientActif", "dbo")]
+    public IQueryable<Models.Models.Patient> GetPatientActif()
+    {
+        return FromExpression(() => GetPatientActif());
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.HasDbFunction(typeof(AppDbContext).GetMethod(nameof(GetFullName)))
+            .HasName("GetPatientActif")
+            .HasSchema("dbo");
+
         modelBuilder.HasDbFunction(typeof(AppDbContext).GetMethod(nameof(GetFullName), new[] { typeof(int) }))
             .HasName("GetFullName")
             .HasSchema("dbo");

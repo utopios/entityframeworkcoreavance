@@ -10,15 +10,18 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private readonly DataService _dataService;
-    public HomeController(ILogger<HomeController> logger, DataService dataService)
+    private readonly AppDbContext _appDbContext;
+    public HomeController(ILogger<HomeController> logger, DataService dataService, AppDbContext appDbContext)
     {
         _logger = logger;
         _dataService = dataService;
+        _appDbContext = appDbContext;
     }
 
     public IActionResult Index()
     {
         var patients = _dataService.Patients.Select(p => new {Fullname = AppDbContext.GetFullName(p.Id)});
+        var patientsActif = _appDbContext.GetPatientActif();
         return View();
     }
 
