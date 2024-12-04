@@ -1,3 +1,4 @@
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using TPFilRouge.Context;
 using TPFilRouge.Entities;
@@ -31,6 +32,13 @@ public class GetAvailableRoomsQueryHandler(QueryBookingDbContext dbContext)
             .AsNoTracking()
             .Skip((query.PageNumber) - 1 * query.PageSize)
             .Take((query.PageSize))
+            .ToListAsync();
+    }
+
+    public async Task<List<Room>> GetAvailableRoomsAsync(DateTime dateTime)
+    {
+        return await _dbContext.Rooms
+            .Where(r => QueryBookingDbContext.IsRoomAvailable(r.Id, dateTime))
             .ToListAsync();
     }
 }

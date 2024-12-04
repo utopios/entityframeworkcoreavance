@@ -65,9 +65,11 @@ public partial class CommandBookingDbContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Rooms__CompanyId__3A81B327");
         });
-
+        
         OnModelCreatingPartial(modelBuilder);
     }
+
+    
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }

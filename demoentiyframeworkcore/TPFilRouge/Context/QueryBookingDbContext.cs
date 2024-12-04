@@ -65,9 +65,13 @@ public partial class QueryBookingDbContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Rooms__CompanyId__3A81B327");
         });
-
+        modelBuilder.HasDbFunction(() => IsRoomAvailable(default, default)); 
         OnModelCreatingPartial(modelBuilder);
     }
 
+    
+    [DbFunction("IsRoomAvailable", "dbo")]
+    public static bool IsRoomAvailable(int roomId, DateTime bookingDate) =>
+        throw new NotSupportedException("Function supported by UDF");
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }
