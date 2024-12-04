@@ -7,6 +7,8 @@ public class DataService(AppDbContext appDbContext)
 {
     private readonly AppDbContext _appDbContext = appDbContext;
 
+    public DbSet<Models.Models.Patient> Patients => _appDbContext.Patients;
+
     public List<Models.Models.Patient> GetPatients()
     {
         //var patients = _appDbContext.Patients.ToList();
@@ -34,6 +36,8 @@ public class DataService(AppDbContext appDbContext)
 
         return patients.AsEnumerable().ToList();
     }
+    
+    
     
     public Models.Models.Patient GetPatient(int id)
     {

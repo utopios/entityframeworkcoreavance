@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using optimisation.DbContexts;
 using optimisation.Models;
 using optimisation.Services;
 
@@ -17,7 +18,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var patients = _dataService.GetPatients();
+        var patients = _dataService.Patients.Select(p => new {Fullname = AppDbContext.GetFullName(p.Id)});
         return View();
     }
 
