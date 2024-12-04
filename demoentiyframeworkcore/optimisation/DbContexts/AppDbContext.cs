@@ -16,7 +16,7 @@ public class AppDbContext : DbContext
     
     
     [DbFunction("GetFullName", "dbo")]
-    public static decimal GetFullName(int patientId)
+    public static string GetFullName(int patientId)
     {
         throw new NotImplementedException();
     }
