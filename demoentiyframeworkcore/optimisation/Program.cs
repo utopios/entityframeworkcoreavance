@@ -1,3 +1,4 @@
+using EFCoreSecondLevelCacheInterceptor;
 using optimisation.DbContexts;
 using optimisation.Services;
 
@@ -7,6 +8,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddScoped<DataService>();
+
+builder.Services.AddEFSecondLevelCache(options =>
+{
+    options.UseMemoryCacheProvider().CacheAllQueries(CacheExpirationMode.Absolute, TimeSpan.FromHours(1));
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

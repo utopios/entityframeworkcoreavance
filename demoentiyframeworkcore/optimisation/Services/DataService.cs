@@ -1,3 +1,4 @@
+using EFCoreSecondLevelCacheInterceptor;
 using Microsoft.EntityFrameworkCore;
 using optimisation.DbContexts;
 
@@ -41,6 +42,7 @@ public class DataService(AppDbContext appDbContext)
     {
         
         var patients = _appDbContext.Patients
+            .Cacheable()
             .Include(p => p.Consultations)
             .ThenInclude(c => c.Prescriptions)
             .ThenInclude(p => p.Medicament)

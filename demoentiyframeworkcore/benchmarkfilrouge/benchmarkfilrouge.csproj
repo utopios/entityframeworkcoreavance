@@ -8,12 +8,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\optimisation\optimisation.csproj" />
+      <ProjectReference Include="..\TPFilRouge\TPFilRouge.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="BenchmarkDotNet" Version="0.14.0" />
-      <PackageReference Include="EFCoreSecondLevelCacheInterceptor" Version="4.8.8" />
     </ItemGroup>
 
 </Project>

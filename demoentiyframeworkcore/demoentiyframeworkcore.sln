@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "optimisation", "optimisatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "benchmark", "benchmark\benchmark.csproj", "{C6E35CB8-DBF3-475E-A316-7791384D6D5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "benchmarkfilrouge", "benchmarkfilrouge\benchmarkfilrouge.csproj", "{1A274637-883F-4CD1-B1CD-56BFFCC1BAAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{C6E35CB8-DBF3-475E-A316-7791384D6D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6E35CB8-DBF3-475E-A316-7791384D6D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6E35CB8-DBF3-475E-A316-7791384D6D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A274637-883F-4CD1-B1CD-56BFFCC1BAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A274637-883F-4CD1-B1CD-56BFFCC1BAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A274637-883F-4CD1-B1CD-56BFFCC1BAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A274637-883F-4CD1-B1CD-56BFFCC1BAAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
